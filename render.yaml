@@ -3,7 +3,7 @@ services:
     name: edudiff-backend
     runtime: docker
     dockerfilePath: backend/Dockerfile
-    dockerContext: backend
+    dockerContext: .
     envVars:
       - key: PORT
         value: 10000
