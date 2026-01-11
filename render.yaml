@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: edudiff-backend
+    runtime: docker
+    rootDir: backend
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: GOOGLE_API_KEY
+        sync: false
+    plan: free
+    region: oregon
